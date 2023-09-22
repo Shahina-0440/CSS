@@ -1,0 +1,23 @@
+#container{
+    margin-top:30px;
+    text-align:center;
+    
+}
+.card{
+    width:300px;/*setting each card width and height*/
+    height:300px;
+    border:1px solid rgb(218, 215, 215);/*setting border to create the card*/
+    display:inline-block;/*to get cards side by side*/
+    margin-right:10px;/*space between each card*/
+}
+.card:hover{
+    box-shadow:0 2px 8px gray;/*creating a pop up using box shadow*/
+}
+.card img{
+    width:100%;/*setting width of the container and width of the image is same to occupy entire soace of the card*/
+}
+.card p{
+    /*word-break:break-all;*/
+    text-align: justify;
+    margin:0 5px 0 5px;
+}
