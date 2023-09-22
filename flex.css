@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+}
+.flex-container{
+    width:100VW;/*setting container to full width*/
+    height:40VW;
+    background-color:lightblue;
+    padding:20px;
+    box-sizing:border-box;/*to avoid padding effect on the width and height so that the container will set fixely */
+    display:flex;/*making the entire container either flex-row or flex-column*/
+    flex-direction:column;/*making the elements start form the right side*/
+    align-items: flex-end;
+    justify-content:flex-start;
+
+}
+#flex-item{
+    background-color: lightcoral;
+    margin-right:16px;/*to divide the Div's seperately*/
+    padding:3px 10px;
+    align-self:flex-start;
+}
