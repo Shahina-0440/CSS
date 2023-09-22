@@ -1,0 +1,119 @@
+body{
+    font-family:Arial, sans-serif;/*this is for total body page font family directly available in html*/
+}
+nav{
+    text-align:right;  /*for nav items to the right sude*/
+}
+section{
+    text-align:center; /*to align google image to center*/
+    padding-top:10%;
+}
+.menu_item{   
+    font-size:13px;
+    color:black;
+    text-decoration: none; /*to remove underline intially*/
+    position:relative; /*position and top for moving item from its normal position to the same line as menu and profile pic there*/
+    top:-8px; /*negative values to move it up*/
+    margin-right:13px;/*this is for making gap between the items at the right side*/
+}
+.menu_item:hover{ /*to get underline when hover on it*/
+    text-decoration: underline;
+}
+.material-symbols-outlined { /*this style is copy and pasted from the google for the menu icon and also the link tag is pasted in head tag for this icon from (google material icons)*/
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.profile-pic{ /*for the letter B profile pic width and height*/
+    width:50px;
+    height:32px;
+}
+#google-logo{ /*to reduce the image size*/
+    width:400px;
+    height:180px;
+}
+#image-wrapper{
+    position:relative;/*to use position absolute*/
+    width:500px;
+    display:inline-block;/*this is for aligning it to center because the section alignment is center so we use display it takes the text-align of the section*/
+}
+#search-box{
+    width:100%; /*the search box is in image-wrapper so the image wrapper width 500px now serach box set to entire 500px..because div occupy the entire row we set it to 500px*/
+    color:#222;
+    border:1px solid #dfe1e5;
+    font-size:11px;
+    padding:13px;
+    border-radius:24px;
+    outline:none;/*to remove the outline coming when we hover ir click on that by default*/
+    margin-bottom:20px;
+}
+#search-box:hover{/*add box-shadow and border when hiver on it*/
+    border-color: #d4d2d2;
+    box-shadow: 1px 6px 0px rgb(240, 236, 236);  
+}
+#search-box:focus{/*adding same box-shadow and border while we typing something also*/
+    border-color: #d4d2d2;
+    box-shadow: 1px 6px 0px rgb(240, 236, 236);  
+}
+
+.google-voice{
+    width:35px;
+    height:35px;
+}
+#image-wrapper > img{ /* this is for selecting the image tag from the div*/
+    position:absolute; /* because we make its parent wrapper to postion relative so now we can use the top and right property for change*/
+    right:0;  /* so the search icon moves to the extreme right of the width 500px which makes 100% for the search box*/
+    top:0; /*to move the icon to the top side*/
+
+}
+.btn{
+    background-color: rgb(219, 214, 214);
+    color:#757373;
+    font-size:14px;
+    background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+    border:1px solid transparent;
+    box-shadow:0 0 1px black;
+}
+.btn:hover{
+    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    border:1px solid #c6c6c6;
+    box-shadow:0 1px 1px black;
+    color:#222;
+}
+.btn:first-of-type{
+    margin-right: 15px; /*to give the gap to the right side of the first button*/
+}
+#app-dropdown{
+    width:300px;
+    padding:28px;
+    border:1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);/*controlling shadow blurness*/
+    margin:0;
+    padding:20px;
+    position:absolute;
+    right:75px;
+    text-align:center;
+    display:none;/*initially to hide the app dropdown*/
+}
+#drop-down{
+    display:inline-block;
+}
+#drop-down:hover #app-dropdown{
+    display:block;/*when someone hover on the menu then the app-dropdown displays*/
+}
+.app-item{
+    display:inline-block;
+    width:60px;
+    margin-bottom: 6px;
+    padding:10px;
+}
+.app-item:hover{
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border-radius:8px;
+}
+.app-item>img{
+    width:30px;
+    height:30px;
+}

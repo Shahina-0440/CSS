@@ -1,0 +1,30 @@
+body{
+    margin:0;
+}
+header{
+    background-color:red;
+    height:80px;
+}
+main{
+    padding:5px 10%;
+}
+aside{
+    display: inline-block;
+    background-color: aqua;
+    height:450px;
+    margin-right:1%;
+    width:29%
+    
+    
+}
+section{
+    display:inline-block;
+    background-color: lightcoral;
+    height:450px;
+    width:69%;
+    
+}
+footer{
+    background-color:blue;
+    height: 300px;
+}
