@@ -1,0 +1,9 @@
+div{
+    height:50VW;
+    background-color:lightblue;
+}
+div h1{
+    width:200px;
+    background-color: lightcoral;
+    transform: translateY(80%);
+}
